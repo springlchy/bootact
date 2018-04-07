@@ -6,6 +6,18 @@ Bootstrap components wrapped by React
  Many of the css code are borrowed from `Bootstrap`, so are the `JSX` part of the React Components.
  The inspiration is from [antd](http://ant.design), you'er find the usages are very like antd.
  
+ Currently 10 components have been completed:
+ * Row -for grid layout
+ * Col -for grid layout
+ * Button -corresponds to `<button type="button" class="btn ..."></button>` in Bootstrap
+ * Badge  -corresponds to `<span class="badge">10</span>` in Bootstrap
+ * Label  -corresponds to `<span class="label">Hello</span>` in Bootstrap
+ * Alert  -corresponds to `<div class="alert">...</div>` in Bootstrap, supports dismissable.(see example.js)
+ * Progress -corresponds to `<div class="progress"><div class="progress-bar">...</div></div>` in Bootstrap
+ * Icon -corresponds to `<span class="glyphicon glyphicon-..."></span>` in Bootstrap
+ * ListGroup -corresponds to `<ul class="list-group">...</ul>` in Bootstrap
+ * ListGroup.Item -corresponds to `<li class="list-group-item">...</li>` in Bootstrap
+ 
 ## Purpose
 Sometimes I find it tedious to write HTML page in Bootstrap, for example,
 if I want to make an icon, I have to write like this:
