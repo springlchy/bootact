@@ -7,8 +7,8 @@ Bootstrap components wrapped by React
  The inspiration is from [antd](http://ant.design), you'll find the usages are very similar like antd.
  
  Currently 10 components have been completed:
- * Row -for grid layout
- * Col -for grid layout
+ * Row -for grid layout, corresponds to `<div class="row"></div>` in Bootstrap
+ * Col -for grid layout, corresponds to `<div class="col-..."></div>` in Bootstrap
  * Button -corresponds to `<button type="button" class="btn ..."></button>` in Bootstrap
  * Badge  -corresponds to `<span class="badge">10</span>` in Bootstrap
  * Label  -corresponds to `<span class="label">Hello</span>` in Bootstrap
