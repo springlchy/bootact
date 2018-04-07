@@ -8,10 +8,16 @@ import Icon from './components/icon/Icon';
 import Row from './components/row/Row';
 import Col from './components/col/Col';
 import Breadcrumb from './components/breadcrumb/Breadcrumb';
+import Dropdown from './components/dropdown/Dropdown';
+import Menu from './components/menu/Menu';
+
+import './common/css/index.css';
 
 export {
     Button,
     Breadcrumb,
+    Dropdown,
+    Menu,
     ListGroup,
     Badge,
     Label,

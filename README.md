@@ -4,9 +4,9 @@ Bootstrap components wrapped by React
 ## Introduction
  `bootact` is a library which wraps `Bootstrap` components using React, less code is needed compared to use pure `Bootstrap`.
  Many of the css code are borrowed from `Bootstrap`, so are the `JSX` part of the React Components.
- The inspiration is from [antd](http://ant.design), you'll find the usages are very similar like antd.
+ The inspiration is from [antd](http://ant.design), you'll find the usages are very similar to antd.
  
- Currently 10 components have been completed:
+ Currently below components have been completed:
  * Row -for grid layout, corresponds to `<div class="row"></div>` in Bootstrap
  * Col -for grid layout, corresponds to `<div class="col-..."></div>` in Bootstrap
  * Button -corresponds to `<button type="button" class="btn ..."></button>` in Bootstrap
@@ -17,7 +17,9 @@ Bootstrap components wrapped by React
  * Icon -corresponds to `<span class="glyphicon glyphicon-..."></span>` in Bootstrap
  * ListGroup -corresponds to `<ul class="list-group">...</ul>` in Bootstrap
  * ListGroup.Item -corresponds to `<li class="list-group-item">...</li>` in Bootstrap
- 
+ * Breadcrumb -corresponds to `<ol class="breadcrumb">..</ol>` in Bootstrap, items in breadcrumb is represented by Breadcrumb.Item
+ * Menu,Menu.Item,Menu.Submenu -create menus, derived from dropdown-menu in Bootstrap
+
  You can expolore their usage in `example.js`.
  
 ## Purpose
