@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
+import './App.css';
 
 import {Button, ListGroup as List, Badge, Label, Alert} from './bootact';
 import {Progress, Icon, Row, Col} from './bootact';
+import {Breadcrumb} from './bootact';
 
 class App extends Component {
   constructor(props) {
@@ -27,6 +29,11 @@ class App extends Component {
     ];
     return (
       <div className="App">
+        <Breadcrumb>
+          <Breadcrumb.Item><a href={"#"}>Home</a></Breadcrumb.Item>
+          <Breadcrumb.Item><a href={"#"}>Library</a></Breadcrumb.Item>
+          <Breadcrumb.Item>Data</Breadcrumb.Item>
+        </Breadcrumb>
         <Button type="success" data-id={this.state.id} onClick={this.handleClick.bind(this)}>
         确认<Icon type="ok"/>
         </Button>

@@ -7,9 +7,11 @@ import Progress from './components/progress/Progress';
 import Icon from './components/icon/Icon';
 import Row from './components/row/Row';
 import Col from './components/col/Col';
+import Breadcrumb from './components/breadcrumb/Breadcrumb';
 
 export {
     Button,
+    Breadcrumb,
     ListGroup,
     Badge,
     Label,
