@@ -6,7 +6,7 @@ Bootstrap components wrapped by React
  Many of the css code are borrowed from `Bootstrap`, so are the `JSX` part of the React Components.
  The inspiration is from [antd](http://ant.design), you'll find the usages are very similar to antd.
  
- Currently below components have been completed:
+ Currently the following components have been completed:
  * Row -for grid layout, corresponds to `<div class="row"></div>` in Bootstrap
  * Col -for grid layout, corresponds to `<div class="col-..."></div>` in Bootstrap
  * Button -corresponds to `<button type="button" class="btn ..."></button>` in Bootstrap
