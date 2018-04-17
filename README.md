@@ -6,7 +6,7 @@ Bootstrap components wrapped by React
  Many of the css code are borrowed from `Bootstrap`, so are the `JSX` part of the React Components.
  The inspiration is from [antd](http://ant.design), you'll find the usages are very similar to antd.
  
- Currently below components have been completed:
+ Currently the following components have been completed:
  * Row -for grid layout, corresponds to `<div class="row"></div>` in Bootstrap
  * Col -for grid layout, corresponds to `<div class="col-..."></div>` in Bootstrap
  * Button -corresponds to `<button type="button" class="btn ..."></button>` in Bootstrap
@@ -17,9 +17,21 @@ Bootstrap components wrapped by React
  * Icon -corresponds to `<span class="glyphicon glyphicon-..."></span>` in Bootstrap
  * ListGroup -corresponds to `<ul class="list-group">...</ul>` in Bootstrap
  * ListGroup.Item -corresponds to `<li class="list-group-item">...</li>` in Bootstrap
- * Breadcrumb -corresponds to `<ol class="breadcrumb">..</ol>` in Bootstrap, items in breadcrumb is represented by Breadcrumb.Item
+ * Breadcrumb -corresponds to `<ol class="breadcrumb">..</ol>` in Bootstrap, items in breadcrumb can be represented by Breadcrumb.Item
  * Menu,Menu.Item,Menu.Submenu -create menus, derived from dropdown-menu in Bootstrap
-
+    ``` html
+    <Menu>
+        <Menu.Item>Action 1</Menu.Item>
+        <Menu.Submenu title={<span>Open</span>}>
+          <Menu.Item key="2-1">Action 11</Menu.Item>
+          <Menu.Item key="2-2">Action 12</Menu.Item>
+        </Menu.Submenu>
+        <Menu.Item>Action 2</Menu.Item>
+        <Menu.Divider/>
+        <Menu.Item>Action 3</Menu.Item>
+      </Menu>
+     ```
+     
  You can expolore their usage in `example.js`.
  
 ## Purpose
