@@ -3,7 +3,8 @@ import './App.css';
 
 import {Button, ListGroup as List, Badge, Label, Alert} from './bootact';
 import {Progress, Icon, Row, Col} from './bootact';
-import {Breadcrumb} from './bootact';
+import {Breadcrumb, Dropdown, Menu} from './bootact';
+import {Input} from './bootact';
 
 class App extends Component {
   constructor(props) {
@@ -27,6 +28,18 @@ class App extends Component {
         count: "116"
       }
     ];
+    const menu = (
+      <Menu>
+        <Menu.Item>Action 1</Menu.Item>
+        <Menu.Submenu title={<span>Open</span>}>
+          <Menu.Item key="2-1">Action 11</Menu.Item>
+          <Menu.Item key="2-2">Action 12</Menu.Item>
+        </Menu.Submenu>
+        <Menu.Item>Action 2</Menu.Item>
+        <Menu.Divider/>
+        <Menu.Item>Action 3</Menu.Item>
+      </Menu>
+    )
     return (
       <div className="App">
         <Breadcrumb>
@@ -34,6 +47,19 @@ class App extends Component {
           <Breadcrumb.Item><a href={"#"}>Library</a></Breadcrumb.Item>
           <Breadcrumb.Item>Data</Breadcrumb.Item>
         </Breadcrumb>
+        {menu}
+        <Dropdown overlay={
+          <Menu className="dropdown-menu">
+            <Menu.Item key="1-1">Action 1</Menu.Item>
+            <Menu.Item key="1-2">Action 2</Menu.Item>
+            <Menu.Item key="1-3">Action 3</Menu.Item>
+          </Menu>
+        }>
+        <a className="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+          Dropdown
+          <Dropdown.Carcet/>
+        </a>
+        </Dropdown>
         <Button type="success" data-id={this.state.id} onClick={this.handleClick.bind(this)}>
         确认<Icon type="ok"/>
         </Button>
@@ -71,6 +97,11 @@ class App extends Component {
           <Col sm={4}>col-4</Col>
           <Col sm={{span:4, offset: 2}}>col-4</Col>
         </Row>
+        <div className="form-group has-success">
+          <Input addonBefore="@"/>
+          <Input.Search onSearch={text => console.log("you entered " + text)}/>
+          <Input.Search enterButton onSearch={text => console.log("you entered " + text)}/>
+        </div>
       </div>
     );
   }
