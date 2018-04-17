@@ -1,3 +1,10 @@
+* {
+    box-sizing: border-box;
+}
+
 .pull-right {
     float: right;
+}
+.hidden {
+    display: none;
 }

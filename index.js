@@ -10,6 +10,7 @@ import Col from './components/col/Col';
 import Breadcrumb from './components/breadcrumb/Breadcrumb';
 import Dropdown from './components/dropdown/Dropdown';
 import Menu from './components/menu/Menu';
+import Input from './components/input/Input';
 
 import './common/css/index.css';
 
@@ -25,5 +26,6 @@ export {
     Progress,
     Icon,
     Row,
-    Col
+    Col,
+    Input
 };
