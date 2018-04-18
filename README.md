@@ -31,8 +31,19 @@ Bootstrap components wrapped by React
         <Menu.Item>Action 3</Menu.Item>
       </Menu>
      ```
+ * Input -corresponds to `<input class="form-control" ...>` in Bootstrap, but supports addons.
+  ``` html
+    <Input addonBefore="http://" addonAfter=".com"/>
+  ```
 
- You can expolore their usage in `example.js`.
+ * Input.Search -specially for search input, an icon is automatically appended after the input component.
+  ``` html
+    <Input.Search/>
+    <Input.Search enterButton/>
+    <Input.Search enterButton="Search" onSearch={text => console.log(text)}/>
+  ```
+
+ You can expolore their usages in `example.js`.
  
 ## Purpose
 Sometimes I find it tedious to write HTML page in Bootstrap, for example,
