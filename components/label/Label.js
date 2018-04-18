@@ -19,7 +19,7 @@ class Label extends Component {
   render() {
     const {type, className, clickHandler, otherProps, children} = this.state;
     const defaultClassName = 'label';
-    var myClassName = (type && type!=='default') ? (defaultClassName + ' label-' + type) : (defaultClassName + ' label-default');
+    let myClassName = (type && type!=='default') ? (defaultClassName + ' label-' + type) : (defaultClassName + ' label-default');
     if (className) {
         myClassName += (' ' + className);
     }

@@ -24,7 +24,7 @@ class Input extends Component {
     const {size, className, addonBefore, addonAfter, suffixIcon, otherProps} = this.state;
     console.log(otherProps);
     const defaultClassName = 'form-control';
-    var myClassName = defaultClassName;
+    let myClassName = defaultClassName;
     if (size == 'large') {
         myClassName += ' input-lg';
     } else if (size == 'small') {
@@ -33,9 +33,9 @@ class Input extends Component {
     if (className) {
         myClassName += (' ' + className);
     }
-    var suffix = '';
+    let suffix = '';
     if (suffixIcon) {
-        var suffixClass = "glyphicon glyphicon-" + suffixIcon + " form-control-feedback";
+        let suffixClass = "glyphicon glyphicon-" + suffixIcon + " form-control-feedback";
         if (otherProps.hassearch && otherProps.onSearch) {
             console.log("has search");
             suffix = (<span className={suffixClass} onClick={(e)=>otherProps.onSearch(findDOMNode(this).getElementsByTagName("input")[0].value)}></span>);

@@ -9,7 +9,7 @@ class Icon extends Component {
     render() {
         const {type, className, otherProps} = this.state;
         const prefix = 'glyphicon';
-        var myClassName = prefix + ' ' + prefix + '-' + type;
+        let myClassName = prefix + ' ' + prefix + '-' + type;
         if (className) {
             myClassName += (' ' + className);
         }

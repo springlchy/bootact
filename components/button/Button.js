@@ -21,7 +21,7 @@ class Button extends Component {
     const {type, size, className, clickHandler, otherProps, children} = this.state;
     const defaultClassName = size ? 'btn btn-' + size : 'btn';
     const defaultType = type ? 'btn-' +type : 'btn-primary';
-    var myClassName = defaultClassName + ' ' + defaultType;
+    let myClassName = defaultClassName + ' ' + defaultType;
     if (className) {
       myClassName += (' ' + className);
     }

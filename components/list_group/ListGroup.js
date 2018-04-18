@@ -20,7 +20,7 @@ class ListGroup extends Component {
   render() {
     const {className, clickHandler, dataSource, renderItem, otherProps} = this.state;
     const defaultClassName ='list-group';
-    var myClassName = className ? (defaultClassName + ' ' + className) : defaultClassName;
+    let myClassName = className ? (defaultClassName + ' ' + className) : defaultClassName;
 
     const userClick = clickHandler || this.myClickHandler;
     userClick.bind(this);
@@ -64,7 +64,7 @@ class Item extends Component {
   render() {
     const {type, className, clickHandler, otherProps, children} = this.state;
     const defaultClassName = 'list-group-item';
-    var myClassName = className ? (defaultClassName + ' ' + className) : defaultClassName;
+    let myClassName = className ? (defaultClassName + ' ' + className) : defaultClassName;
     if (type) {
       myClassName += (' list-group-item-' + type);
     }

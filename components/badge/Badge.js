@@ -18,7 +18,7 @@ class Badge extends Component {
   render() {
     const {text, className, otherProps} = this.state;
     const defaultClassName = 'badge';
-    var myClassName = className ? (defaultClassName + ' ' + className) : defaultClassName;
+    let myClassName = className ? (defaultClassName + ' ' + className) : defaultClassName;
 
     return (
       <span className={myClassName} {...otherProps}>

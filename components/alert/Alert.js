@@ -21,7 +21,7 @@ class Alert extends Component {
   render() {
     const {type, withClose, className, clickHandler, otherProps, children} = this.state;
     const defaultClassName = 'alert';
-    var myClassName = type ? (defaultClassName + ' alert-' + type) : defaultClassName ;
+    let myClassName = type ? (defaultClassName + ' alert-' + type) : defaultClassName ;
     if (className) {
         myClassName += (' ' + className);
     }
@@ -44,7 +44,7 @@ class Alert extends Component {
   myClickHandler() {
   }
   onClose() {
-    var dom = findDOMNode(this);
+    let dom = findDOMNode(this);
     dom.remove();
   }
 }

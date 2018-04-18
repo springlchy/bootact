@@ -31,7 +31,7 @@ Bootstrap components wrapped by React
         <Menu.Item>Action 3</Menu.Item>
       </Menu>
      ```
-     
+
  You can expolore their usage in `example.js`.
  
 ## Purpose

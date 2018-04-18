@@ -11,15 +11,15 @@ class Col extends Component {
         const prefix = 'col';
         const defaultSize = 'md';
         const defaultSizePrefix = 'col-md';
-        var myClassName = '';
-        var myClassArr1 = [];
+        let myClassName = '';
+        let myClassArr1 = [];
         if (otherProps.span && (typeof otherProps.span == 'number')) {
-            var it = otherProps.span;
+            let it = otherProps.span;
             delete otherProps.span;
             myClassArr1.push([defaultSizePrefix, it].join('-'));
         }
 
-        var props1 = ['offset', 'push', 'pull'];
+        let props1 = ['offset', 'push', 'pull'];
         props1.map(item => {
             if (otherProps[item] && (typeof otherProps[item] == 'number')) {
                 var it = otherProps[item];
@@ -28,24 +28,24 @@ class Col extends Component {
             }
         });
 
-        var props2 = ['xs', 'sm', 'md', 'lg', 'xl'];
-        var myClassArr2 = props2.map(item => {
+        let props2 = ['xs', 'sm', 'md', 'lg', 'xl'];
+        let myClassArr2 = props2.map(item => {
             if (otherProps[item]) {
-                var it = otherProps[item];
+                let it = otherProps[item];
                 delete otherProps[item];
-                var t = typeof it;
+                let t = typeof it;
                 if (t == 'number') {
                     return [prefix, item, it].join('-');
                 } else if (t == 'object') {
-                    var classNameA = [];
-                    for(var k in it) {
+                    let classNameA = [];
+                    for(let k in it) {
                         classNameA.push(k == 'span' ? [prefix, item, it[k]].join('-') : [prefix, item, k, it[k]].join('-'));
                     }
                     return classNameA.join(' ');
                 }
             }
         });
-        var myClassArr = myClassArr1.concat(myClassArr2);
+        let myClassArr = myClassArr1.concat(myClassArr2);
         myClassArr = myClassArr.filter(v => {return v;});
         myClassName = myClassArr.join(' ');
         return (

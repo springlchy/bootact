@@ -47,7 +47,7 @@ class Submenu extends Component {
     render() {
         const {title, className, onClick,children, otherProps, menuIcon, isMenuOpen} = this.state;
         const defaultClassName = 'menu menu-sub';
-        var myClassName = className ? defaultClassName + ' ' + className : defaultClassName;
+        let myClassName = className ? defaultClassName + ' ' + className : defaultClassName;
         const userClick = onClick || this.myOnClick;
         if (isMenuOpen) {
             myClassName += (' menu-open');
@@ -76,19 +76,19 @@ class Submenu extends Component {
         };
     }
     myOnClick(e) {
-        var target = e.target;
+        let target = e.target;
         console.log(target);
-        var parent = target.parentElement.parentElement;
-        var index = 0;
+        let parent = target.parentElement.parentElement;
+        let index = 0;
         
-        for (var ele = parent.firstElementChild; ele.firstElementChild != target; ele=ele.nextElementSibling) {
+        for (let ele = parent.firstElementChild; ele.firstElementChild != target; ele=ele.nextElementSibling) {
             index+=1;
         }
         console.log(index);
         console.log(this.keys[index]);
     }
     mySubmenuClick(e) {
-        var t = this.state;
+        let t = this.state;
         this.setState({
             isMenuOpen: !t.isMenuOpen,
         });
